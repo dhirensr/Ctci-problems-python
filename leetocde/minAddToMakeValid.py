@@ -4,7 +4,6 @@ def minAddToMakeValid(S):
     """
     stack = []
     for i in S:
-        print(stack)
         if(i=="("):
             stack.append(i)
         else:
