@@ -1,4 +1,3 @@
-
 def maxCrossingSum(arr, l, m, h) :
     sm = 0
     left_sum = -10000
