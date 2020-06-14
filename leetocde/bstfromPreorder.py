@@ -53,7 +53,7 @@ print(result)
 def bstFromPreorder(preorder):
     inorder = sorted(preorder)
     if not preorder:
-	return None
+        return None
     root = TreeNode(preorder[0])
     idx = inorder.index(preorder[0])
     root.left = self.bstFromPreorder(preorder[1:idx + 1])
