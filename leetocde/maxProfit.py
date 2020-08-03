@@ -1,3 +1,4 @@
+import math
 def maxProfit(prices):
     minPrice = math.inf
     max_profit = 0
@@ -8,3 +9,6 @@ def maxProfit(prices):
             max_profit = max(max_profit,prices[i] - minPrice)
 
     return max_profit
+
+
+print(maxProfit([100,180,260,310,40,535,695]))

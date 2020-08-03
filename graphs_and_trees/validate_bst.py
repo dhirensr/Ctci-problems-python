@@ -16,7 +16,6 @@ def check_bst(node,mini,maxi):
     return (check_bst(node.left,mini,node.val-1) and
             check_bst(node.right,node.val+1,maxi))
 
-
 def validate_bst(tree):
     print(check_bst(tree,mini,maxi))
 

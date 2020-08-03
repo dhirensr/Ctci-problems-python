@@ -1,5 +1,3 @@
-def check_balanced(tree):
-    print('pass')
 
 class Node:
     # Constructor to create a new Node
@@ -23,7 +21,7 @@ def isBalanced(root):
     rh = height(root.right)
     # allowed values for (lh - rh) are 1, -1, 0
     if (abs(lh - rh) <= 1) and isBalanced(
-    root.left) is True and isBalanced( root.right) is True:
+    root.left) is True and isBalanced(root.right) is True:
         return True
     # if we reach here means tree is not
     # height-balanced tree
